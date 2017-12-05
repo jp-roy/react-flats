@@ -12,7 +12,7 @@ class App extends Component {
     });
   }
 
-  updateMarker = (flat) => {
+  selectFlat = (flat) => {
     this.setState({
       selectedFlat: flat
     });
@@ -23,7 +23,7 @@ class App extends Component {
       <div className="container">
         <div>
           <div className="flat-list">
-            <FlatList flats={flats} selectedFlat={this.state.selectedFlat} updateMarker={this.updateMarker}/>
+            <FlatList flats={flats} selectedFlat={this.state.selectedFlat} selectFlat={this.selectFlat}/>
           </div>
           <div className="map-container">
             <Gmap flat={this.state.selectedFlat} />

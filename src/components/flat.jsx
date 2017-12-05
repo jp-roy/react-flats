@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 
 class Flat extends Component {
   handleClick = (event) => {
-    this.props.updateMarker(this.props.flat);
-    // this.setState({selectedFlat: })
+    this.props.selectFlat(this.props.flat);
   }
 
   render() {
